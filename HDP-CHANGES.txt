@@ -1,0 +1,29 @@
+Changes only in Hortonworks github and not in Apache Tez release 0.8.4 and hence not covered by CHANGES.txt.
+
+INCOMPATIBLE CHANGES
+
+NEW FEATURES
+
+
+
+IMPROVEMENTS
+
+
+
+
+BUG FIXES
+  TEZ-3409. Log dagId along with other information when submitting a dag.
+  TEZ-3384. Fix TestATSV15HistoryLoggingService::testDAGGroupingGroupingEnabled unit test.  
+  TEZ-3376. Fix groupId generation to account for dagId starting with 1.
+  TEZ-3359. Add granular log levels for HistoryLoggingService.
+  TEZ-3374. Change TEZ_HISTORY_LOGGING_TIMELINE_NUM_DAGS_PER_GROUP conf key name.
+  TEZ-3358. Support using the same TimelineGroupId for multiple DAGs.
+  TEZ-3357. Change TimelineCachePlugin to handle DAG grouping.
+  TEZ-3348. NullPointerException in Tez MROutput while trying to write using
+            Parquet's DeprecatedParquetOutputFormat.
+  TEZ-3356. Fix initializing of stats when custom ShuffleVertexManager is used.
+  TEZ-3329. Tez ATS data is incomplete for a vertex which fails or gets killed before initialization.
+  TEZ-3235. Modify Example TestOrderedWordCount job to test the IPC limit for large dag plans.
+  TEZ-3337. Do not log empty fields of TaskAttemptFinishedEvent to avoid confusion.
+  TEZ-1248. Reduce slow-start should special case 1 reducer runs.
+  TEZ-3370. Tez UI: Display the log link as N/A if the app does not provide a log link
