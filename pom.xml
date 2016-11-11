@@ -76,17 +76,6 @@
 
   <repositories>
     <repository>
-      <id>hortonwork repo</id>
-      <name>Hortonworks Repository</name>
-      <url>http://repo.hortonworks.com/content/groups/public</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
       <id>${distMgmtSnapshotsId}</id>
       <name>${distMgmtSnapshotsName}</name>
       <url>${distMgmtSnapshotsUrl}</url>
